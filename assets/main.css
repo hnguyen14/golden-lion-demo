@@ -1,0 +1,15 @@
+.tool-bar {
+    padding: 40px;
+}
+.room-component {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.project-summary {
+    margin: 20px 0 40px 0;
+}
+
+.project-summary div {
+    margin-top: 10px;
+}
