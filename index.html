@@ -16,46 +16,60 @@
     <div class="container-fluid bg-white h-100 row">
       <div id="canvas" class="text-bg-light col-8 h-100"></div>
       <div class="container col-4 tool-bar">
-        <h4>Your project</h4>
-        <div class="project-summary">
+        <div class="row">
+          <h4>Your project</h4>
+        </div>
+        <div class="row project-summary">
           <div id="square-footage"><span>Square footage: </span> <span id="square-footage-value"></span></div>
           <div id="Cost est."><span>Cost est.: </span> <span id="cost-estimate"></span></div>
         </div>
-        <h4>Room Components</h4>
-        <div class="row col-12 text-start card room-component">
-          <div class="card-body row text-start">
-            <div class="card-text col-8">
-              <div class="fs-5 fw-semibold" style="color: #F26419">Living room</div>
-              <div class="fs-6 fw-light fst-italic">216sqft (12 x 18)</div>
-            </div>
-            <button type="button" class="btn btn-lg btn-primary col-4" onclick="addLivingRoom()">Add</button>
-          </div>
+        <div class="row">
+          <h4>Room Components</h4>
         </div>
-        <div class="row col-12 text-start card room-component">
-          <div class="card-body row">
-            <div class="card-text col-8">
-              <div class="fs-5 fw-semibold" style="color: #F6AE2D">Large Living room</div>
-              <div class="fs-6 fw-light fst-italic">400sqft (20 x 20)</div>
+        <div class="row overflow-auto">
+          <div class="col-12 text-start card room-component">
+            <div class="card-body row text-start">
+              <div class="card-text col-8">
+                <div class="fs-5 fw-semibold" style="color: #F26419">Living room</div>
+                <div class="fs-6 fw-light fst-italic">216sqft (12 x 18)</div>
+              </div>
+              <div class="d-grid col-4">
+                <button type="button" class="btn btn-primary" onclick="addLivingRoom()">Add</button>
+              </div>
             </div>
-            <button type="button" class="btn btn-lg btn-primary col-4" onclick="addLGLivingRoom()">Add</button>
           </div>
-        </div>
-        <div class="row col-12 text-start card room-component">
-          <div class="card-body row">
-            <div class="card-text col-8">
-              <div class="fs-5 fw-semibold" style="color: #758E4F">Bedroom</div>
-              <div class="fs-6 fw-light fst-italic">120sqft (10 x 12)</div>
+          <div class="col-12 text-start card room-component">
+            <div class="card-body row">
+              <div class="card-text col-8">
+                <div class="fs-5 fw-semibold" style="color: #F6AE2D">Large Living room</div>
+                <div class="fs-6 fw-light fst-italic">400sqft (20 x 20)</div>
+              </div>
+              <div class="d-grid col-4">
+                <button type="button" class="btn btn-primary" onclick="addLGLivingRoom()">Add</button>
+              </div>
             </div>
-            <button type="button" class="btn btn-lg btn-primary col-4" onclick="addBedroom()">Add</button>
           </div>
-        </div>
-        <div class="row col-12 text-start card room-component">
-          <div class="card-body row">
-            <div class="card-text col-8">
-              <div class="fs-5 fw-semibold" style="color: #33658A">Bathroom</div>
-              <div class="fs-6 fw-light fst-italic">100sqft (10 x 10)</div>
+          <div class="col-12 text-start card room-component">
+            <div class="card-body row">
+              <div class="card-text col-8">
+                <div class="fs-5 fw-semibold" style="color: #758E4F">Bedroom</div>
+                <div class="fs-6 fw-light fst-italic">120sqft (10 x 12)</div>
+              </div>
+              <div class="d-grid col-4">
+                <button type="button" class="btn btn-lg btn-primary" onclick="addBedroom()">Add</button>
+              </div>
             </div>
-            <button type="button" class="btn btn-lg btn-primary col-4" onclick="addBathroom()">Add</button>
+          </div>
+          <div class="col-12 text-start card room-component">
+            <div class="card-body row">
+              <div class="card-text col-8">
+                <div class="fs-5 fw-semibold" style="color: #33658A">Bathroom</div>
+                <div class="fs-6 fw-light fst-italic">100sqft (10 x 10)</div>
+              </div>
+              <div class="d-grid col-4">
+                <button type="button" class="btn btn-primary" onclick="addBathroom()">Add</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
