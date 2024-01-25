@@ -20,13 +20,16 @@
           <h4>Your project</h4>
         </div>
         <div class="row project-summary">
-          <div id="square-footage"><span>Square footage: </span> <span id="square-footage-value"></span></div>
-          <div id="Cost est."><span>Cost est.: </span> <span id="cost-estimate"></span></div>
+          <div id="square-footage"><span>Square footage: </span> <span id="square-footage-value" class="fw-bold"></span></div>
+          <div id="Cost est."><span>Cost est.: </span> <span id="cost-estimate" class="fw-bold"></span></div>
+          <div class="d-grid">
+            <button type="button" class="btn btn-warning" onclick="reset()">Reset</button>
+          </div>
         </div>
         <div class="row">
           <h4>Room Components</h4>
         </div>
-        <div class="row overflow-auto">
+        <div class="row overflow-auto room-components">
           <div class="col-12 text-start card room-component">
             <div class="card-body row text-start">
               <div class="card-text col-8">
@@ -68,6 +71,16 @@
               </div>
               <div class="d-grid col-4">
                 <button type="button" class="btn btn-primary" onclick="addBathroom()">Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-start card room-component">
+            <div class="card-body row">
+              <div class="card-text col-8">
+                <div class="fs-5 fw-semibold" style="color: #33658A">Custom Room</div>
+              </div>
+              <div class="d-grid col-4">
+                <button type="button" class="btn btn-primary" onclick="">Add</button>
               </div>
             </div>
           </div>

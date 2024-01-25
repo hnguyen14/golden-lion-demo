@@ -5,6 +5,10 @@ var height = canvas.clientHeight;
 let sq = 0;
 let cost = 0;
 
+function reset() {
+  stage.clear();
+}
+
 function setSQ() {
   document.getElementById("square-footage-value").innerText = `${sq} sqft`;
 }

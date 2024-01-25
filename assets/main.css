@@ -6,6 +6,14 @@
     padding: 20px;
 }
 
+.room-components {
+    padding-left: 20px;
+}
+
+button {
+    height: 50px;
+}
+
 .project-summary {
     margin: 20px 0 40px 0;
 }
