@@ -5,45 +5,43 @@ var height = canvas.clientHeight;
 let sq = 0;
 let cost = 0;
 
+const costPerSQ = 200;
+
 function reset() {
+  setSQ(0);
+  setCost(0);
   stage.clear();
 }
 
-function setSQ() {
-  document.getElementById("square-footage-value").innerText = `${sq} sqft`;
+function setSQ(value) {
+  sq = value;
+  document.getElementById("square-footage-value").innerText = `${value} sqft`;
 }
 
-function setCost() {
-  document.getElementById("cost-estimate").innerText = `$${cost}`;
+function setCost(value) {
+  cost = value;
+  document.getElementById("cost-estimate").innerText = `$${value}`;
 }
 
 function addLivingRoom() {
-  sq += 216;
-  cost += 200 * 216;
   renderRoomComponent(120, 180, "#F26419");
-  setSQ();
-  setCost();
+  setSQ(sq + 216);
+  setCost(cost + costPerSQ * 216);
 }
 function addLGLivingRoom() {
-  sq += 400;
-  cost += 200 * 400;
   renderRoomComponent(200, 200, "#F6AE2D");
-  setSQ();
-  setCost();
+  setSQ(sq + 400);
+  setCost(cost + costPerSQ * 400);
 }
 function addBedroom() {
-  sq += 120;
-  cost += 200 * 120;
   renderRoomComponent(100, 120, "#758E4F");
-  setSQ();
-  setCost();
+  setSQ(sq + 120);
+  setCost(cost + costPerSQ * 120);
 }
 function addBathroom() {
-  sq += 100;
-  cost += 200 * 100;
   renderRoomComponent(100, 100, "#33658A");
-  setSQ();
-  setCost();
+  setSQ(sq + 100);
+  setCost(cost + costPerSQ * 100);
 }
 
 function renderRoom(stage, path, width, height) {
@@ -108,3 +106,5 @@ var stage = new Konva.Stage({
   width: width,
   height: height,
 });
+setSQ(0);
+setCost(0);
