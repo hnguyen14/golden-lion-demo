@@ -11,6 +11,7 @@ function reset() {
   setSQ(0);
   setCost(0);
   stage.clear();
+  stage.removeChildren();
 }
 
 function setSQ(value) {
